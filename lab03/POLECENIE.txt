@@ -1,0 +1,55 @@
+Proszê napisaæ "grê w ¿ycie". Parametry programu:
+
+java lab04 size_x size_y steps preset
+
+gdzie wszystkie parametry programu s¹ typu ca³kowitego i maj¹ nastêpuj¹ce znaczenie:
+
+size_x, size_y - rozmiar planszy
+steps - liczba kroków symulacji do wykonania
+preset - w zale¿noœci od wartoœci ustawia jedn¹ z plansz predefiniowanych:
+ 0 - losowy rozk³ad (przydatna bêdzie funkcja Math.random())
+ 1 - na œrodku planszy umieszczona jest "³ódŸ" (niezmiennik)
+ 
+ .....
+ .XX..
+ .X.X.
+ ..X..
+ .....
+ 
+ 2 - na œrodku planszy umieszczony jest "blinker" (oscylator)
+ 
+ .....
+ ..X..
+ ..X..
+ ..X..
+ .....
+ 
+ 3 - na œrodku planszy umieszczony jest "szybowiec" (jest to tzw "spaceship" - odleci on poza plansze)
+ 
+ .....
+ .XXX.
+ .X...
+ ..X..
+ .....
+ 
+Ouptput z programu powinien wygl¹daæ jak nastêpuje:
+
+------ 1 --------
+.....X...........
+.....X...........
+...X.............
+...X.............
+...X......X...X..
+......X....X.....
+------ 2 --------
+....X....X....X..
+
+itd. przez "steps" kroków. Uwaga - 2 punkty rezerwujê sobie za ³adn¹ "obiektywnoœæ" rozwi¹zania.
+ 
+ 
+Tym co nie pamiêtaj¹ przypominam, ¿e w grze w ¿ycie ka¿da komórka ma 8 s¹siadów a regu³y s¹ jak nastêpuje:
+ 
+1) Martwa komórka, która ma dok³adnie 3 ¿ywych s¹siadów, staje siê ¿ywa w nastêpnej jednostce czasu (rodzi siê)
+2) ¯ywa komórka z 2 albo 3 ¿ywymi s¹siadami pozostaje nadal ¿ywa; przy innej liczbie s¹siadów umiera (z "samotnoœci" albo "zat³oczenia").
+
+Mi³ej zabawy.
